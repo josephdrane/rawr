@@ -1,8 +1,10 @@
 # RAWR Skill in ASK Python SDK (using Classes)
 
+
 ## Audio for Alexa
 
 https://developer.amazon.com/docs/quick-reference/play-audio-quick-reference.htmlk
+
 
 ## Best quality audio conversion : 
 ffmpeg install : https://www.binarycomputer.solutions/install-ffmpeg-centos/#centos-7-quick
@@ -12,10 +14,13 @@ Reference : https://developer.amazon.com/docs/custom-skills/speech-synthesis-mar
 ffmpeg -i <input-file> -ac 2 -codec:a libmp3lame -b:a 48k -ar 24000 -write_xing 0 <output-file>
 ```
 
-example : `ffmpeg -i lion.mp3 -ac 2 -codec:a libmp3lame -b:a 48k -ar 24000 -write_xing 0 lion_01.mp3`
+example : 
+`ffmpeg -i lion.mp3 -ac 2 -codec:a libmp3lame -b:a 48k -ar 24000 -write_xing 0 lion_01.mp3`
+
 
 ## AWS Work
 
+```bash
 aws s3 ls s3://animal-sound-clips
 aws s3 cp lion_01.mp3 s3://animal-sound-clips
 
@@ -56,3 +61,4 @@ aws s3 cp raccoon_01.mp3 s3://animal-sound-clips
 aws s3 cp owl_01.mp3 s3://animal-sound-clips
 aws s3 cp hedgehog_01.mp3 s3://animal-sound-clips
 aws s3 cp turkey_01.mp3 s3://animal-sound-clips
+```
