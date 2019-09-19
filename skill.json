@@ -1,0 +1,31 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Animal Sounds",
+          "examplePhrases": [
+            "Alexa open roar",
+            "Alexa launch roar",
+            "Alexa ask roar what does a {animal} sound like"
+          ],
+          "name": "rawr",
+          "description": "Alexa provided animal sounds are minimal. This skill is here to provide all the animal sounds andn w/ multiple different sounds"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Just ask what that {animal} sounds like. Check the logs",
+      "category": "CHILDRENS_EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/py/lambda_upload",
+          "uri": "alexa-skill-rawr"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "roar",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnimalSoundIntent",
+                    "slots": [
+                        {
+                            "name": "animal",
+                            "type": "AMAZON.Animal"
+                        }
+                    ],
+                    "samples": [
+                        "what does {animal} say",
+                        "what does {animal} sound like",
+                        "what does a {animal} sound like",
+                        "what does an {animal} sound like"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
